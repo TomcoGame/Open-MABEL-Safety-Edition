@@ -2,11 +2,11 @@
 
 [← Wiki home](README.md)
 
-![Guided six-stage risk assessment lesson](../assets/wiki/risk-assessment-animated.svg)
+![Guided spreadsheet-based risk assessment walkthrough](../assets/wiki/risk-assessment-animated.svg)
 
 [Open guided SVG](../assets/wiki/risk-assessment-animated.svg) · [View static storyboard](../assets/wiki/risk-assessment-static.svg)
 
-**How to use:** Read the six cards in order. In SVG viewers that support animation, a yellow outline advances every six seconds. All information remains visible without animation.
+**How to use:** Read across the first hazard row. In SVG viewers that support animation, the yellow selection advances through operating context, hazardous situation, risk evaluation, risk reduction, residual risk, and requirements/evidence every six seconds. The worksheet remains readable without animation.
 
 ## Purpose
 Identify hazardous situations and derive risk-reduction measures for a defined robot configuration and operating context.
@@ -29,9 +29,9 @@ Identify hazardous situations and derive risk-reduction measures for a defined r
 ## Review gate
 No risk-reduction claim is complete without a defined operating context, acceptance criterion, and verification route.
 
-## What the visual lesson teaches
+## What the spreadsheet walkthrough teaches
 
-The six cards move from **context → hazardous situation → risk evaluation → risk reduction → residual-risk review → requirements and evidence**. The example illustrates why gravity-loaded mechanisms need careful assessment; it does not prescribe a risk rating or establish that a particular safeguard is installed.
+The worksheet columns move from **context → hazardous situation → risk evaluation → risk reduction → residual-risk review → requirements and evidence**. The example illustrates why gravity-loaded mechanisms need careful assessment; it does not prescribe a risk rating or establish that a particular safeguard is installed.
 
 **Decision loop:** If residual risk is not acceptable, revisit risk-reduction measures, then re-evaluate before baselining the safety requirements.
 
