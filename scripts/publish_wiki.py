@@ -24,6 +24,14 @@ PAGE_NAMES = {
     "verification-evidence.md": "Verification-and-Evidence",
     "visual-authoring-guide.md": "Visual-Authoring-Guide",
 }
+PROCESS_NAMES = {
+    "README.md": "Process-Library",
+    "PROC-A01.md": "PROC-A01-Safety-Management",
+    "PROC-A02.md": "PROC-A02-Standards-Applicability",
+    "PROC-A04.md": "PROC-A04-Change-Control",
+    "PROC-B01.md": "PROC-B01-Item-Definition",
+    "PROC-B03.md": "PROC-B03-Risk-Assessment",
+}
 LINK = re.compile(r"(!?\[[^\]]*\])\((<[^>]*>|[^)]*)\)")
 
 def rewrite(text, origin):
@@ -41,7 +49,9 @@ def rewrite(text, origin):
         resolved = (origin.parent / target).resolve() if target else origin
         if not resolved.is_relative_to(ROOT):
             raise ValueError(f"Link escapes repository: {origin} -> {target}")
-        if resolved.parent == SOURCE and resolved.name in PAGE_NAMES:
+        if resolved.parent == SOURCE / "processes" and resolved.name in PROCESS_NAMES:
+            url = f"{WIKI}/{PROCESS_NAMES[resolved.name]}{anchor}"
+        elif resolved.parent == SOURCE and resolved.name in PAGE_NAMES:
             url = f"{WIKI}/{PAGE_NAMES[resolved.name]}{anchor}"
         else:
             rel = resolved.relative_to(ROOT).as_posix()
@@ -61,6 +71,10 @@ def main():
             raise FileNotFoundError(source)
         text = rewrite(source.read_text(encoding="utf-8"), source)
         (dest / (slug + ".md")).write_text(text, encoding="utf-8")
+    for filename, slug in PROCESS_NAMES.items():
+        source = SOURCE / "processes" / filename
+        text = rewrite(source.read_text(encoding="utf-8"), source)
+        (dest / (slug + ".md")).write_text(text, encoding="utf-8")
     sidebar = """### Open MABEL Safety Edition
 
 - [Home](Home)
@@ -69,7 +83,7 @@ def main():
 - [Safety requirements](Safety-Requirements)
 - [Safety architecture](Safety-Architecture)
 - [Verification & evidence](Verification-and-Evidence)
-- [Visual authoring guide](Visual-Authoring-Guide)
+- [Visual authoring guide](Visual-Authoring-Guide)\n\n### Controlled Processes\n- [Process library](Process-Library)\n- [Safety management](PROC-A01-Safety-Management)\n- [Standards applicability](PROC-A02-Standards-Applicability)\n- [Change control](PROC-A04-Change-Control)\n- [Item definition](PROC-B01-Item-Definition)\n- [Hazard assessment](PROC-B03-Risk-Assessment)
 
 ---
 
@@ -78,7 +92,7 @@ def main():
     (dest / "_Sidebar.md").write_text(sidebar, encoding="utf-8")
     footer = "[Open MABEL Safety Edition](https://github.com/TomcoGame/Open-MABEL-Safety-Edition) · Safety-Enabled Robotics · [Documentation source](https://github.com/TomcoGame/Open-MABEL-Safety-Edition/tree/main/docs/wiki)\n"
     (dest / "_Footer.md").write_text(footer, encoding="utf-8")
-    print(f"Prepared {len(PAGE_NAMES)} pages and wiki navigation in {dest}")
+    print(f"Prepared {len(PAGE_NAMES) + len(PROCESS_NAMES)} pages and wiki navigation in {dest}")
 
 if __name__ == "__main__":
     main()
