@@ -1,0 +1,49 @@
+name: Publish Safety Edition Wiki
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/wiki/**'
+      - 'docs/assets/wiki/**'
+      - 'docs/assets/branding/**'
+      - 'docs/assets/architecture/**'
+      - 'scripts/publish_wiki.py'
+      - '.github/workflows/publish-wiki.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-safety-wiki
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: ${{ github.repository == 'TomcoGame/Open-MABEL-Safety-Edition' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check wiki credential
+        env:
+          WIKI_PUSH_TOKEN: ${{ secrets.WIKI_PUSH_TOKEN }}
+        run: |
+          if [ -z "$WIKI_PUSH_TOKEN" ]; then
+            echo "::error::Add repository Actions secret WIKI_PUSH_TOKEN with write access to the Wiki."
+            exit 1
+          fi
+      - name: Build wiki pages
+        run: python3 scripts/publish_wiki.py --output /tmp/mabel-wiki-pages
+      - name: Push to GitHub Wiki
+        env:
+          WIKI_PUSH_TOKEN: ${{ secrets.WIKI_PUSH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$WIKI_PUSH_TOKEN" | base64 -w0)" clone "https://github.com/${GITHUB_REPOSITORY}.wiki.git" /tmp/mabel-wiki-repo
+          cp /tmp/mabel-wiki-pages/*.md /tmp/mabel-wiki-repo/
+          cd /tmp/mabel-wiki-repo
+          git add -- '*.md'
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: sync Safety Edition visual wiki from main repository"
+            git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$WIKI_PUSH_TOKEN" | base64 -w0)" push origin HEAD
+          fi
