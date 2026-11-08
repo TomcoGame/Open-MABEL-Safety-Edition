@@ -6,22 +6,22 @@
 # OPEN MABEL
 ## SAFETY EDITION
 
-**Open robotics. Engineered safeguards. Traceable evidence.**
+**Open robotics. Safety-enabled design. Traceable evidence.**
 
-*A general-purpose mobile manipulation research platform with a safety-engineering development program.*
+*An open-source, safety-enabled mobile manipulation platform.*
 
 [Architecture](#system-architecture) · [Safety functions](#planned-safety-functions) · [Model](#sysml-inspired-system-model) · [Roadmap](#development-roadmap) · [Get started](#getting-started) · [Contribute](#contributing)
 
 </div>
 
-> [!WARNING]
-> **RESEARCH / DEVELOPMENT — NOT SAFETY CERTIFIED.** This repository contains a baseline robot and **proposed** safety architecture, requirements and analyses. The independent safety controller, protective sensors, safe motion functions and hardware safeguards described here are **not demonstrated as implemented or validated**. Do not treat this project as suitable for unsupervised operation around people. No PL, SIL, certification or regulatory compliance claim is made.
+> [!NOTE]
+> **Development status: safety-enabled architecture in progress.** The repository includes the upstream robot baseline and preliminary safety work products. Independent protective control, protective sensing, and safety-function validation are tracked as planned engineering work. Operate only within controls and conditions supported by the current configuration.
 
 ## What is Open MABEL Safety Edition?
 
-Open MABEL Safety Edition is a **distinct safety-engineering-focused development variant** of [robotmabel/open_mabel](https://github.com/robotmabel/open_mabel). The goal is to turn an open mobile bimanual research robot into a **configurable, evidence-backed safety-capable platform** for defined applications and operating environments.
+Open MABEL Safety Edition is an **independent safety-enabled development variant** of [robotmabel/open_mabel](https://github.com/robotmabel/open_mabel). The goal is to develop a **configurable, evidence-backed safety-capable platform** for defined applications and operating environments.
 
-It is **not** a new safety-certified robot, and is **not** an official upstream release. The existing controller and operational safety gates remain research-grade until audited. The project does not assume any single application such as logistics, cleaning or household service.
+This is an independent derivative project, not an official upstream release. Existing operational safety gates will be evaluated against defined safety requirements. The project does not assume any single application such as logistics, cleaning or household service.
 
 ### Design commitments
 
@@ -98,7 +98,7 @@ Application-level collision avoidance and tip-over prevention can provide defens
 
 ## Planned safety functions
 
-**All rows are candidate requirements, not implemented features.** Required performance levels, response times and test criteria remain to be determined through risk assessment.
+**These are planned safety-capable functions; implementation status is tracked individually.** Required performance levels, response times and test criteria remain to be determined through risk assessment.
 
 | ID | Candidate safety function | Principal hazard | State |
 |---|---|---|---|
@@ -310,13 +310,13 @@ We welcome robotics, functional safety, embedded, mechanical, electrical, contro
 1. Link the change to hazards and requirements.
 2. Identify affected configurations and operating conditions.
 3. Provide implementation rationale, verification plan and evidence.
-4. Avoid unsubstantiated claims such as “safety rated,” “PL d,” “SIL 2,” “certified,” or “safe around people.”
+4. Only claim achieved performance levels, integrity targets or operating capabilities when supported by configuration-specific verification evidence.
 
 See [safety workspace](safety/README.md) for evidence maturity definitions.
 
 ## Upstream attribution and licensing
 
-This is an **independent derivative development effort**, based on [robotmabel/open_mabel](https://github.com/robotmabel/open_mabel), and not an official upstream safety release or certification. Preserve upstream copyright notices and third-party license obligations. The original project name and marks may have separate trademark restrictions.
+This is an **independent derivative development effort**, based on [robotmabel/open_mabel](https://github.com/robotmabel/open_mabel), and not an official upstream release. Preserve upstream copyright notices and third-party license obligations. The original project name and marks may have separate trademark restrictions.
 
 - [Software license — Apache-2.0](LICENSE)
 - [Hardware license — CERN-OHL-S-2.0](LICENSE-HARDWARE.txt)
@@ -331,6 +331,6 @@ This is an **independent derivative development effort**, based on [robotmabel/o
 
 *Design safety into the system. Demonstrate it with evidence.*
 
-**Project maturity: preliminary engineering — no safety certification.**
+**Safety-enabled development · Configuration-specific verification in progress.**
 
 </div>
