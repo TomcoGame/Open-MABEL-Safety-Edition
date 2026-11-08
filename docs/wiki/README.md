@@ -4,6 +4,12 @@
 
 This version-controlled documentation hub is the source for a future GitHub Wiki. It links directly to engineering artifacts in this repository, so diagrams, guides, and evidence can be reviewed together.
 
+## Standards-driven process library
+
+[**Explore the controlled process library**](processes/README.md) · [Master register](processes/process-register.csv) · [Standards register](processes/standards-register.csv)
+
+Five foundational procedures are drafted for technical review. The full 36-process register tracks remaining work.
+
 ## Start here
 
 | Guide | What you will learn | Primary artifact |

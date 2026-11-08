@@ -1,0 +1,37 @@
+Process ID,Process title,Category,Priority,Status,Owner,Applicable standards,Linked records,Next action
+PROC-A01,Safety Management Plan,Governance,P1,Draft,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-A02,Standards Applicability and Compliance Mapping,Governance,P1,Draft,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-A03,Roles Competence and Independence,Governance,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-A04,Document Configuration and Change Control,Governance,P1,Draft,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-A05,Supplier and Component Safety Assurance,Governance,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-B01,Item Definition and Operating Context,Product Definition and Risk,P1,Draft,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-B02,Intended Use Misuse and Operating Modes,Product Definition and Risk,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-B03,Hazard Identification and Risk Assessment,Product Definition and Risk,P1,Draft,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-B04,Risk Reduction and Residual Risk Review,Product Definition and Risk,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-B05,Safety Concept Development,Product Definition and Risk,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-C01,Safety Requirements Engineering,Requirements and Design,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-C02,Safety Function Specification,Requirements and Design,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-C03,Safety Architecture and Interface Design,Requirements and Design,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-C04,PLr SIL Allocation and Reliability Analysis,Requirements and Design,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-C05,Safety Hardware Design and Integration,Requirements and Design,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-C06,Safety Software Development,Requirements and Design,P1,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-D01,Emergency and Protective Stop,Robot Safeguards,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-D02,Mobile Base and Navigation Safety,Robot Safeguards,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-D03,Manipulator Gripper and Contact Safety,Robot Safeguards,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-D04,Lift Gravity Loads and Stability,Robot Safeguards,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-D05,Protective Sensing and Safety Zones,Robot Safeguards,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-D06,Power Battery and Electrical Safety,Robot Safeguards,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-E01,Verification Planning and Traceability,Verification and Validation,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-E02,Safety Function Validation,Verification and Validation,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-E03,Fault Injection and Diagnostic Testing,Verification and Validation,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-E04,Integration and Commissioning,Verification and Validation,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-E05,Safety Case and Independent Review,Verification and Validation,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-F01,Operating Instructions and Training,Operation and Maintenance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-F02,Inspection Maintenance and Proof Testing,Operation and Maintenance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-F03,Incident Fault and Field Change Management,Operation and Maintenance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-F04,Release and Deployment Approval,Operation and Maintenance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-G01,Software Tool Confidence and Qualification,Supporting Assurance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-G02,Safety Relevant Cybersecurity,Supporting Assurance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-G03,Simulation and Model Credibility,Supporting Assurance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-G04,Open Source and Third Party Component Assurance,Supporting Assurance,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve
+PROC-H01,Decommissioning and Disposal,Lifecycle Closeout,P2,Planned,Unassigned,Pending profile assessment,TBD,Review and approve

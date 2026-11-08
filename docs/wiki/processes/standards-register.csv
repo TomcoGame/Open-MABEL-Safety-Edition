@@ -1,0 +1,15 @@
+Standard,Edition,Application profile,Applicability,Scope rationale,Review status,Primary processes,Publisher
+ISO 12100,2010,Industrial and laboratory,Core methodology,Machinery risk assessment and reduction,Preliminary,PROC-B01;PROC-B03,https://www.iso.org/standard/51528.html
+ISO 10218-1,2025,Industrial manipulator,Conditional,Industrial robot requirements; mobile platform mobility outside scope,Preliminary,PROC-A02;PROC-B01,https://www.iso.org/standard/73933.html
+ISO 10218-2,2025,Industrial robot application,Conditional,Industrial robot integration and application,Preliminary,PROC-A02;PROC-B03,https://www.iso.org/
+ISO 13849-1,2023,Safety-related controls,Conditional,SRP/CS design and performance levels,Preliminary,PROC-A02;PROC-B03,https://www.iso.org/
+ISO 13849-2,2012,Safety-related controls,Conditional,Validation of safety-related control systems,Preliminary,PROC-A02,https://www.iso.org/
+ANSI/A3 R15.08-1,Edition to confirm,Industrial mobile robot,Conditional,Mobile robot scope and safety design,Needs licensed review,PROC-A02;PROC-B03,https://www.automate.org/
+ANSI/A3 R15.08-2,Edition to confirm,Industrial mobile manipulator,Conditional,Integrated mobile robot application scope,Needs licensed review,PROC-A02;PROC-B03,https://www.automate.org/
+IEC 60204-1,Edition to confirm,Electrical machinery,Conditional,Electrical equipment and protective measures,Needs licensed review,PROC-A02,https://webstore.iec.ch/
+IEC 62061,Edition to confirm,Selected SIL-based control lifecycle,Conditional,Alternative functional safety approach,Needs licensed review,PROC-A02,https://webstore.iec.ch/
+ISO 13850,2015,Emergency stop,Conditional,Emergency stop design principles,Preliminary,PROC-A02,https://www.iso.org/
+ISO 13855,2024,Safeguard positioning,Conditional,Protective device separation distances,Preliminary,PROC-A02,https://www.iso.org/
+ISO 3691-4,2023,Driverless industrial truck application,Conditional,Depends on platform classification and use,Preliminary,PROC-A02,https://www.iso.org/
+ISO 13482,2014,Personal care robot,Alternative profile,Not universal for industrial MABEL use,Preliminary,PROC-A02,https://www.iso.org/
+ISO 20607,2019,Machinery instructions,Conditional,Safety-related instructions for use,Preliminary,PROC-A02,https://www.iso.org/
