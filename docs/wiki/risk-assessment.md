@@ -24,3 +24,23 @@ Identify hazardous situations and derive risk-reduction measures for a defined r
 
 ## Review gate
 No risk-reduction claim is complete without a defined operating context, acceptance criterion, and verification route.
+
+## Interactive-style process visualization
+
+![Risk assessment workflow](../assets/wiki/risk-assessment-animated.svg)
+
+[Static accessible version](../assets/wiki/risk-assessment-static.svg)
+
+## Worked example — illustrative only
+
+**Scenario:** a vertical lift unexpectedly descends while a person is within the reachable workspace. **Hazard:** crushing or impact from gravity-loaded motion. **Potential controls:** mechanical load retention, monitored braking, controlled energy isolation, and access restrictions, subject to analysis. **Next step:** document risk assumptions and derive measurable requirements. This is a teaching example, not an assessed MABEL hazard.
+
+## Decision checklist
+
+- [ ] Is the configuration and operating mode explicit?
+- [ ] Are human exposure and foreseeable misuse considered?
+- [ ] Are initiating events and consequences distinguishable?
+- [ ] Are proposed controls linked to requirements?
+- [ ] Are residual risks and open assumptions recorded?
+
+[Downloadable risk review template](templates/risk-review-template.csv)
