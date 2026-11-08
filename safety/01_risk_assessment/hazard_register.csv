@@ -1,0 +1,11 @@
+hazard_id,subsystem,hazardous_event,possible_harm,initiating_conditions,initial_risk,risk_reduction_candidate,residual_risk,status
+HZ-001,Mobile base,Unexpected motion into person,Impact or crushing,Command fault or unintended startup,TBD,Independent protective stop and monitored restart,TBD,Proposed
+HZ-002,Arms and hands,Unexpected arm movement or pinch,Crushing or entrapment,Joint command error or contact,TBD,Monitored motion limits and guarding or separation,TBD,Proposed
+HZ-003,Lift,Vertical axis drops on loss of power,Crushing or dropped payload,Brake or supply fault,TBD,Fail-safe load holding and anti-drop design,TBD,Proposed
+HZ-004,Whole robot,Tip-over,Impact or crushing,Elevated lift and lateral acceleration,TBD,Stability envelope validated by testing and independent limits,TBD,Proposed
+HZ-005,Gripper,Released payload strikes person,Impact injury,Loss of grip or supply,TBD,Retention mechanism and operating restrictions,TBD,Proposed
+HZ-006,Power system,Electrical fault or battery thermal event,Burns or fire,Short circuit or battery failure,TBD,Protection and electrical design review,TBD,Proposed
+HZ-007,Control communications,Loss of teleoperation link causes stale motion,Impact or crushing,Network loss or stale packets,TBD,Independent command freshness monitoring and safe stop,TBD,Proposed
+HZ-008,Perception,Missed person in robot path,Collision,Occlusion or sensor failure,TBD,Protective sensing with verified coverage,TBD,Proposed
+HZ-009,Recovery,Unexpected restart after protective stop,Impact or crushing,Automatic re-enable,TBD,Manual reset plus separate deliberate start,TBD,Proposed
+HZ-010,Maintenance,Unexpected energization during servicing,Crushing or electric shock,Stored energy or accidental command,TBD,Isolation and service procedures,TBD,Proposed
