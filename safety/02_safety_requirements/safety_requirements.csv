@@ -1,0 +1,11 @@
+requirement_id,linked_hazards,requirement,verification_method,integrity_target,status
+SR-001,HZ-001;HZ-002,The system shall provide an accessible emergency-stop function whose actuation initiates a defined safe stopping response.,Inspection and fault-injection test,TBD by risk assessment,Proposed
+SR-002,HZ-001;HZ-008,The safety-related control system shall initiate a protective stop upon violation of the validated protective field.,Coverage and stopping-distance test,TBD by risk assessment,Proposed
+SR-003,HZ-001;HZ-004,The safety-related control system shall enforce validated speed limits appropriate to configuration and operating mode.,Boundary and fault-injection test,TBD by risk assessment,Proposed
+SR-004,HZ-002,The safety-related control system shall prevent motion beyond validated joint and workspace limits.,Limit and fault-injection test,TBD by risk assessment,Proposed
+SR-005,HZ-003;HZ-005,The mechanical and control design shall prevent uncontrolled descent or load release on loss of power within the validated load envelope.,Power-loss and load-holding test,TBD by risk assessment,Proposed
+SR-006,HZ-004,The system shall prevent operation outside the validated stability envelope for lift height arm posture and payload.,Stability analysis and dynamic test,TBD by risk assessment,Proposed
+SR-007,HZ-007,The system shall detect stale or lost motion commands and transition to the defined safe response within a validated time.,Communication fault injection,TBD by risk assessment,Proposed
+SR-008,HZ-009,The system shall require deliberate operator action to restart after a latched protective or emergency stop.,State transition test,TBD by risk assessment,Proposed
+SR-009,HZ-006,Electrical power distribution shall include protection and isolation provisions based on electrical hazard assessment.,Design review and electrical test,TBD by risk assessment,Proposed
+SR-010,HZ-010,The system shall support controlled isolation and verification of hazardous energy before service.,Inspection and procedure validation,TBD by risk assessment,Proposed
