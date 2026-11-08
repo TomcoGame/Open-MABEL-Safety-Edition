@@ -19,3 +19,23 @@ Translate identified hazards and risk controls into verifiable, configuration-sp
 [Safety requirements register](../../safety/02_safety_requirements/safety_requirements.csv) · [Hazard register](../../safety/01_risk_assessment/hazard_register.csv).
 
 A requirement is not evidence of implementation. Record verification results separately.
+
+## Animated requirements workflow
+
+![Safety requirements workflow](../assets/wiki/safety-requirements-animated.svg)
+
+[Static accessible version](../assets/wiki/safety-requirements-static.svg)
+
+## Worked example — illustrative only
+
+**Parent scenario:** unintended lift descent. **Candidate requirement:** “When the monitored lift holding condition is lost, the safety-related control shall command the defined load-retention response within a validated reaction time under the specified operating conditions.” The reaction-time limit, sensing architecture, and safe state require engineering derivation; none are assumed here.
+
+## Quality review
+
+- [ ] One independently testable behavior per requirement
+- [ ] Trigger and operating mode defined
+- [ ] Safe state and fault response defined
+- [ ] Performance criteria derived and measurable
+- [ ] Bidirectional links to hazard, architecture and test
+
+[Requirements review template](templates/requirements-review-template.csv)

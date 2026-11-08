@@ -15,6 +15,17 @@ This version-controlled documentation hub is the source for a future GitHub Wiki
 | [Verification and evidence](verification-evidence.md) | Test planning and evidence linkage | [Verification plan](../../safety/07_verification_validation/verification_plan.md) |
 | [Contributing visual docs](visual-authoring-guide.md) | SVG animation, accessibility and review rules | [Visual assets](../assets/README.md) |
 
+## Four core process modules
+
+| Module | Animated workflow | Static fallback | Editable template |
+|---|---|---|---|
+| [Risk assessment](risk-assessment.md) | [Play/view](../assets/wiki/risk-assessment-animated.svg) | [SVG](../assets/wiki/risk-assessment-static.svg) | [CSV](templates/risk-review-template.csv) |
+| [Safety requirements](safety-requirements.md) | [Play/view](../assets/wiki/safety-requirements-animated.svg) | [SVG](../assets/wiki/safety-requirements-static.svg) | [CSV](templates/requirements-review-template.csv) |
+| [Safety architecture](safety-architecture.md) | [Play/view](../assets/wiki/safety-architecture-animated.svg) | [SVG](../assets/wiki/safety-architecture-static.svg) | [CSV](templates/architecture-decision-template.csv) |
+| [Verification & evidence](verification-evidence.md) | [Play/view](../assets/wiki/verification-evidence-animated.svg) | [SVG](../assets/wiki/verification-evidence-static.svg) | [CSV](templates/evidence-record-template.csv) |
+
+These diagrams illustrate processes rather than verified robot capabilities. SVG animation may be disabled by GitHub's image proxy; open the raw SVG or use the static fallback for consistent display.
+
 ## Animated process map
 
 ![Animated safety engineering lifecycle](../assets/wiki/safety-lifecycle-animated.svg)

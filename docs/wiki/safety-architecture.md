@@ -22,3 +22,24 @@ Separate application behavior from the independent authority required for select
 [Architecture definition](../../safety/03_safety_architecture/architecture.md) · [Hardware gap assessment](../../safety/04_hardware_safety/gap_assessment.md) · [Software boundary](../../safety/05_software_safety/software_boundary.md).
 
 **Status:** conceptual architecture and integration planning. The infographic is explanatory, not a hardware wiring diagram.
+
+## Animated architecture workflow
+
+![Safety architecture workflow](../assets/wiki/safety-architecture-animated.svg)
+
+[Static accessible version](../assets/wiki/safety-architecture-static.svg)
+
+## Worked example — illustrative only
+
+**Challenge:** a lift axis is gravity-loaded. Removing motor torque without a load-holding mechanism can cause descent. The architectural decision must consider load retention, fault detection, braking behavior, power loss and recovery, and how safety control acts independently of application software.
+
+## Architecture review gate
+
+- [ ] Control authority is explicitly separated
+- [ ] Safety-related inputs and outputs are identified
+- [ ] Safe state is appropriate to mechanical energy and loads
+- [ ] Fault and communication-loss behavior is specified
+- [ ] Interfaces are traceable to requirements
+- [ ] Diagnostics and verification access are planned
+
+[Architecture decision template](templates/architecture-decision-template.csv)

@@ -20,3 +20,24 @@ Demonstrate the behavior of each allocated safety function for a defined configu
 
 ## Evidence checklist
 Configuration ID; requirement ID; procedure version; test environment; date; executor/reviewer; raw data; acceptance result; deviations; change reference.
+
+## Animated verification workflow
+
+![Verification and evidence workflow](../assets/wiki/verification-evidence-animated.svg)
+
+[Static accessible version](../assets/wiki/verification-evidence-static.svg)
+
+## Worked example — illustrative only
+
+For a future lift-holding safety function, record the hardware revision, payload and lift position, triggering fault, commanded response, measured displacement and stopping/holding behavior, acceptance limits, raw sensor logs, and reviewer disposition. A successful demonstration in one setup does not establish performance across other configurations.
+
+## Verification review gate
+
+- [ ] Test references an approved requirement and configuration
+- [ ] Preconditions and fault injection are reproducible
+- [ ] Acceptance limits are explicit
+- [ ] Raw data and deviations are retained
+- [ ] Results have independent review where required
+- [ ] Safety argument references the exact evidence version
+
+[Evidence record template](templates/evidence-record-template.csv)
