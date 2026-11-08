@@ -8,6 +8,14 @@
 
 **How to use:** Read across the first hazard row. In SVG viewers that support animation, the yellow selection advances through operating context, hazardous situation, risk evaluation, risk reduction, residual risk, and requirements/evidence every six seconds. The worksheet remains readable without animation.
 
+## Concept infographic
+
+![Risk assessment concept — from hazard to evidence](../assets/wiki/risk-assessment-concept-infographic.svg)
+
+[Open full-resolution infographic](../assets/wiki/risk-assessment-concept-infographic.svg)
+
+This infographic explains the **why** of risk assessment. The spreadsheet walkthrough below explains **how to document** the analysis. The risk-reduction options are illustrative and require configuration-specific evaluation.
+
 ## Purpose
 Identify hazardous situations and derive risk-reduction measures for a defined robot configuration and operating context.
 
