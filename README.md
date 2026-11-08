@@ -1,48 +1,10 @@
 <div align="center">
 
-### OPEN HARDWARE · OPEN SOFTWARE · OPEN ROBOTICS
-
-# OPEN MABEL
-## 🟨 SAFETY EDITION
-
-**An Open-Source, Safety-Enabled Mobile Manipulation Platform**
-
-*A modular robotics platform with a safety-capable architecture, traceable requirements, and open engineering artifacts.*
-
-</div>
-
-<table>
-<tr>
-<td width="52%" valign="middle">
-
-### SAFETY-ENABLED ROBOTICS
-
-**Modular Hardware** · **ROS 2 Native**
-
-**Safety-Capable Architecture**
-
-**Open Design** · **Traceable Requirements**
-
-**Verification & Testing**
-
-**56 DOF** · **Swerve Base + Lift**
-
-**2 × 7-DOF Arms** · **2 × 17-DOF Hands**
-
-**Vision Pro Teleop**
-
-</td>
-<td width="48%" valign="middle">
-<img src="https://raw.githubusercontent.com/robotmabel/open_mabel/main/.github/media/mabel_lab.jpg" width="100%" alt="Original MABEL mobile bimanual robot in the laboratory"/>
-</td>
-</tr>
-</table>
-
-<div align="center">
+<img src="docs/assets/branding/mabel_banner.jpg" width="100%" alt="Open MABEL Safety Edition — safety-enabled mobile manipulation platform featuring the MABEL robot" />
 
 [Architecture](#system-architecture) · [Safety functions](#planned-safety-functions) · [Model](#sysml-inspired-system-model) · [Roadmap](#development-roadmap) · [Get started](#getting-started) · [Contribute](#contributing)
 
-<sub>Robot photography: <a href="https://github.com/robotmabel/open_mabel">robotmabel/open_mabel</a> · Safety Edition design and architecture are independent derivative work.</sub>
+<sub>MABEL robot imagery based on the <a href="https://github.com/robotmabel/open_mabel">original Open MABEL project</a>.</sub>
 
 </div>
 
