@@ -1,31 +1,24 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/robotmabel/open_mabel/main/.github/banner.png" width="100%" alt="Original Open MABEL robot — upstream project imagery" />
-
-![Open MABEL Safety Edition — Safety-Enabled](docs/assets/branding/readme-banner.svg)
-
-
 # OPEN MABEL
-## SAFETY EDITION
+## 🟨 SAFETY EDITION
 
-**Open robotics. Safety-enabled design. Traceable evidence.**
+**An Open-Source, Safety-Enabled Mobile Manipulation Platform**
 
-*An open-source, safety-enabled mobile manipulation platform.*
+*Open hardware · Open software · Safety-capable architecture · Traceable engineering*
+
+<img src="https://raw.githubusercontent.com/robotmabel/open_mabel/main/.github/media/mabel_lab.jpg" width="780" alt="MABEL mobile bimanual robot — original upstream laboratory photograph" />
+
+**56 DOF** · **Swerve Base + Lift** · **2 × 7-DOF Arms** · **2 × 17-DOF Hands** · **ROS 2**
 
 [Architecture](#system-architecture) · [Safety functions](#planned-safety-functions) · [Model](#sysml-inspired-system-model) · [Roadmap](#development-roadmap) · [Get started](#getting-started) · [Contribute](#contributing)
+
+<sub>Robot photography from <a href="https://github.com/robotmabel/open_mabel">robotmabel/open_mabel</a>. Safety Edition architecture and documentation are developed independently.</sub>
 
 </div>
 
 > [!NOTE]
 > **Development status: safety-enabled architecture in progress.** The repository includes the upstream robot baseline and preliminary safety work products. Independent protective control, protective sensing, and safety-function validation are tracked as planned engineering work. Operate only within controls and conditions supported by the current configuration.
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/robotmabel/open_mabel/main/.github/media/mabel_lab.jpg" width="640" alt="MABEL robot in the laboratory — original upstream project photograph" />
-
-<sub>Robot imagery: <a href="https://github.com/robotmabel/open_mabel">robotmabel/open_mabel</a> · Safety Edition graphics and architecture are independent derivative work.</sub>
-
-</div>
 
 ## What is Open MABEL Safety Edition?
 
