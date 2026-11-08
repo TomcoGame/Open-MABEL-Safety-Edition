@@ -11,6 +11,19 @@
 > [!NOTE]
 > **Development status: safety-enabled architecture in progress.** The repository includes the upstream robot baseline and preliminary safety work products. Independent protective control, protective sensing, and safety-function validation are tracked as planned engineering work. Operate only within controls and conditions supported by the current configuration.
 
+## Explore the Safety Edition visually
+
+| Robot platform | Architecture | Safety functions | Engineering thread | Safety zones |
+|:--:|:--:|:--:|:--:|:--:|
+| [![System breakdown](<docs/assets/branding/Open MABEL Safety System Breakdown-2.png>)](#robot-platform) | [![Architecture](<docs/assets/branding/Open MABEL Safety Architecture-1.png>)](#system-architecture) | [![Safety functions](<docs/assets/branding/Open MABEL Safety Functions Overview-3.png>)](#planned-safety-functions) | [![Digital thread](<docs/assets/branding/Open MABEL Safety Engineering Thread-4.png>)](#traceability-and-assurance) | [![Safety zones](<docs/assets/branding/Open MABEL Operational Safety Visualization-5.png>)](#operational-safety-zones) |
+| [System breakdown](#robot-platform) | [Safety architecture](#system-architecture) | [Functions](#planned-safety-functions) | [Traceability](#traceability-and-assurance) | [Zones](#operational-safety-zones) |
+
+### Visual engineering wiki
+
+[**Open the documentation hub →**](docs/wiki/README.md) · [Animated process map](docs/assets/wiki/safety-lifecycle-animated.svg) · [Static process map](docs/assets/wiki/safety-lifecycle-static.svg)
+
+The wiki includes process guides for risk assessment, requirements, safety architecture, verification and evidence, with links to the repository's engineering records.
+
 ## What is Open MABEL Safety Edition?
 
 Open MABEL Safety Edition is an **independent safety-enabled development variant** of [robotmabel/open_mabel](https://github.com/robotmabel/open_mabel). The goal is to develop a **configurable, evidence-backed safety-capable platform** for defined applications and operating environments.
