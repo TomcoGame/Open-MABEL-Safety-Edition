@@ -29,6 +29,12 @@ This is an independent derivative project, not an official upstream release. Exi
 
 ## Robot platform
 
+![Open MABEL Safety Edition — robot subsystem breakdown](<docs/assets/branding/Open MABEL Safety System Breakdown-2.png>)
+
+<sub>Illustrative concept graphic. Refer to the engineering work products below for configuration-specific implementation and verification status.</sub>
+
+
+
 The imported Open MABEL baseline describes a mobile bimanual platform with a three-module swerve base, vertical lift, pitching torso, active head, two 7-DOF arms, two dexterous hands, teleoperation, ROS 2 Jazzy, MuJoCo simulation and robot-learning tools. **These are upstream platform characteristics, not verified Safety Edition capabilities.**
 
 | Subsystem | Baseline | Safety investigation |
@@ -41,6 +47,12 @@ The imported Open MABEL baseline describes a mobile bimanual platform with a thr
 | Power | Battery and distribution | Isolation, electrical protection and fault response |
 
 ## System architecture
+
+![Open MABEL Safety Edition — conceptual safety-enabled architecture](<docs/assets/branding/Open MABEL Safety Architecture-1.png>)
+
+<sub>Illustrative concept graphic. Refer to the engineering work products below for configuration-specific implementation and verification status.</sub>
+
+
 
 ![Safety architecture boundary](docs/assets/architecture/safety-control-boundary.svg)
 
@@ -92,6 +104,12 @@ Application-level collision avoidance and tip-over prevention can provide defens
 
 ## Planned safety functions
 
+![Open MABEL Safety Edition — illustrative safety functions](<docs/assets/branding/Open MABEL Safety Functions Overview-3.png>)
+
+<sub>Illustrative concept graphic. Refer to the engineering work products below for configuration-specific implementation and verification status.</sub>
+
+
+
 **These are planned safety-capable functions; implementation status is tracked individually.** Required performance levels, response times and test criteria remain to be determined through risk assessment.
 
 | ID | Candidate safety function | Principal hazard | State |
@@ -108,6 +126,14 @@ Application-level collision avoidance and tip-over prevention can provide defens
 | SF-10 | Service energy isolation | Unexpected startup during maintenance | Proposed |
 
 Source work products: [hazards](safety/01_risk_assessment/hazard_register.csv) · [requirements](safety/02_safety_requirements/safety_requirements.csv) · [architecture](safety/03_safety_architecture/architecture.md).
+
+## Operational safety zones
+
+![Open MABEL Safety Edition — proposed operational safety zones](<docs/assets/branding/Open MABEL Operational Safety Visualization-5.png>)
+
+<sub>Illustrative concept graphic. Refer to the engineering work products below for configuration-specific implementation and verification status.</sub>
+
+This concept illustrates configurable monitoring and protective zones around MABEL. Zone geometry, sensor coverage, detection performance and protective actions are application-specific design inputs, not established properties of the current robot.
 
 ## SysML-inspired system model
 
@@ -175,6 +201,12 @@ stateDiagram-v2
 **State-machine semantics are proposed.** Reset must not automatically initiate hazardous motion. Recovery behavior, E-stop category and protective-stop behavior require validation.
 
 ## Traceability and assurance
+
+![Open MABEL Safety Edition — engineering digital thread](<docs/assets/branding/Open MABEL Safety Engineering Thread-4.png>)
+
+<sub>Illustrative concept graphic. Refer to the engineering work products below for configuration-specific implementation and verification status.</sub>
+
+
 
 ![Assurance thread](docs/assets/architecture/assurance-thread.svg)
 
