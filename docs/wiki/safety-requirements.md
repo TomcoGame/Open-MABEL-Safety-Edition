@@ -20,11 +20,21 @@ Translate identified hazards and risk controls into verifiable, configuration-sp
 
 A requirement is not evidence of implementation. Record verification results separately.
 
-## Animated requirements workflow
+## Requirements engineering worksheet — guided example
 
-![Safety requirements workflow](../assets/wiki/safety-requirements-animated.svg)
+Read **left to right** across the first row. Each column is a decision the engineer must make, not just a workflow milestone.
 
-[Static accessible version](../assets/wiki/safety-requirements-static.svg)
+| Hazard link | Trigger / operating mode | Required safety behavior | Allocation | Acceptance criteria | Verification / evidence |
+|---|---|---|---|---|---|
+| Example: unintended lift descent | Loss of monitored lift-holding condition during lift operation | Initiate the defined load-retention response | Safety-related lift control and holding mechanism (candidate) | Derive and document reaction time, load range and fault response | Planned fault-injection and load-holding tests; results pending |
+| Mobile base unintended travel | To be analyzed | To be derived | TBD | TBD | TBD |
+| Manipulator unexpected contact | To be analyzed | To be derived | TBD | TBD | TBD |
+
+**Walkthrough:** (1) Start with the hazardous situation and its risk-reduction objective. (2) Define the exact condition that activates the function. (3) Write a single, testable required behavior and safe state. (4) Allocate responsibility and interfaces. (5) Derive measurable criteria. (6) Link a test and its reviewed evidence. Revisit the requirement whenever the hazard, configuration or design changes.
+
+**Animated source:** [Open requirements workflow SVG](../assets/wiki/safety-requirements-animated.svg) · [Static SVG](../assets/wiki/safety-requirements-static.svg)
+
+GitHub Wiki may not display externally hosted SVG images inline. The worksheet above is the always-visible teaching version; SVGs are optional linked supplements.
 
 ## Worked example — illustrative only
 
