@@ -29,6 +29,8 @@ jobs:
             echo "::error::Add repository Actions secret WIKI_PUSH_TOKEN with write access to the Wiki."
             exit 1
           fi
+      - name: Test wiki link rewriting
+        run: python3 -m unittest discover -s tests -p 'test_publish_wiki.py'
       - name: Build wiki pages
         run: python3 scripts/publish_wiki.py --output /tmp/mabel-wiki-pages
       - name: Push to GitHub Wiki

@@ -7,7 +7,7 @@ Images stay in the main repository and are linked via raw.githubusercontent.com.
 import argparse
 import pathlib
 import re
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "docs" / "wiki"
@@ -46,7 +46,7 @@ def rewrite(text, origin):
         if "#" in target:
             target, fragment = target.split("#", 1)
             anchor = "#" + fragment
-        resolved = (origin.parent / target).resolve() if target else origin
+        resolved = (origin.parent / unquote(target)).resolve() if target else origin
         if not resolved.is_relative_to(ROOT):
             raise ValueError(f"Link escapes repository: {origin} -> {target}")
         if resolved.parent == SOURCE / "processes" and resolved.name in PROCESS_NAMES:
