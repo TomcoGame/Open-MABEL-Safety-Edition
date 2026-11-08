@@ -1,5 +1,8 @@
 <div align="center">
 
+![Open MABEL Safety Edition](docs/assets/branding/readme-banner.svg)
+
+
 # OPEN MABEL
 ## SAFETY EDITION
 
@@ -44,6 +47,9 @@ The imported Open MABEL baseline describes a mobile bimanual platform with a thr
 | Power | Battery and distribution | Isolation, electrical protection and fault response |
 
 ## System architecture
+
+![Safety architecture boundary](docs/assets/architecture/safety-control-boundary.svg)
+
 
 The following **conceptual architecture** distinguishes the existing application stack from the proposed safety-related control boundary. Arrows show intended logical interfaces, **not confirmed wiring or qualified interfaces**.
 
@@ -175,6 +181,9 @@ stateDiagram-v2
 **State-machine semantics are proposed.** Reset must not automatically initiate hazardous motion. Recovery behavior, E-stop category and protective-stop behavior require validation.
 
 ## Traceability and assurance
+
+![Assurance thread](docs/assets/architecture/assurance-thread.svg)
+
 
 ```mermaid
 flowchart LR
